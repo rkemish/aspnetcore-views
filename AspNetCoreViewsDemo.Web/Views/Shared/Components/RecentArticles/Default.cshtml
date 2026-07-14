@@ -1,0 +1,20 @@
+@model IReadOnlyList<RecentArticleViewModel>
+
+<section class="card h-100">
+    <div class="card-header">
+        <h3 class="h5 mb-0">Recent Articles ViewComponent</h3>
+    </div>
+    <ul class="list-group list-group-flush">
+        @foreach (var article in Model)
+        {
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <strong>@article.Title</strong>
+                    <span class="badge text-bg-secondary">@article.Category</span>
+                </div>
+                <small class="text-muted">@article.PublishedOn</small>
+                <p class="mb-0 mt-1">@article.Summary</p>
+            </li>
+        }
+    </ul>
+</section>

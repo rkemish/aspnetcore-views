@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Concepts";
+}
+
+<h1 class="display-6 mb-3">Razor Views Concepts</h1>
+<p>
+    This walkthrough shows how to compose ASP.NET Core MVC UIs using partial views, view components, and Tag Helpers.
+</p>
+
+<partial name="_ConceptGuideNav" />
+
+<div class="row g-3">
+    <div class="col-lg-4">
+        @await Html.PartialAsync("_FeatureCard", new FeatureCardViewModel
+        {
+            Title = "Partial Views",
+            Description = "Reusable visual fragments shared across pages.",
+            BadgeText = "Partials"
+        })
+        <a class="btn btn-link px-0 mt-2" asp-action="Partials">Open partial views demo</a>
+    </div>
+    <div class="col-lg-4">
+        @await Html.PartialAsync("_FeatureCard", new FeatureCardViewModel
+        {
+            Title = "View Components",
+            Description = "Reusable blocks with isolated render logic and data.",
+            BadgeText = "Components"
+        })
+        <a class="btn btn-link px-0 mt-2" asp-action="ViewComponents">Open view components demo</a>
+    </div>
+    <div class="col-lg-4">
+        @await Html.PartialAsync("_FeatureCard", new FeatureCardViewModel
+        {
+            Title = "Tag Helpers",
+            Description = "Route-aware forms and links with declarative Razor markup.",
+            BadgeText = "Tag Helpers"
+        })
+        <a class="btn btn-link px-0 mt-2" asp-action="TagHelpers">Open Tag Helpers demo</a>
+    </div>
+</div>

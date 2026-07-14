@@ -1,0 +1,19 @@
+@model StatusPanelViewModel
+
+<section class="card h-100 border-success">
+    <div class="card-header bg-success-subtle">
+        <h3 class="h5 mb-0">StatusPanel ViewComponent</h3>
+    </div>
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-5">Environment</dt>
+            <dd class="col-7">@Model.EnvironmentName</dd>
+
+            <dt class="col-5">Build version</dt>
+            <dd class="col-7">@Model.BuildVersion</dd>
+
+            <dt class="col-5">Generated</dt>
+            <dd class="col-7">@Model.GeneratedAt.ToLocalTime()</dd>
+        </dl>
+    </div>
+</section>

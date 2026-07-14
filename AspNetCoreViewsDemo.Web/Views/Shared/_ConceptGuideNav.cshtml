@@ -1,0 +1,68 @@
+@{
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "Index";
+    var steps = new[]
+    {
+        new { Action = "Index", Label = "Overview", Description = "Start here" },
+        new { Action = "Partials", Label = "Partial Views", Description = "Reusable markup" },
+        new { Action = "ViewComponents", Label = "View Components", Description = "Data + rendering blocks" },
+        new { Action = "TagHelpers", Label = "Tag Helpers", Description = "Declarative Razor attributes" },
+        new { Action = "Documentation", Label = "Documentation", Description = "Markdown guides" }
+    };
+
+    var currentIndex = Array.FindIndex(steps, s => string.Equals(s.Action, currentAction, StringComparison.OrdinalIgnoreCase));
+    if (currentIndex < 0)
+    {
+        currentIndex = 0;
+    }
+
+    var previous = currentIndex > 0 ? steps[currentIndex - 1] : null;
+    var next = currentIndex < steps.Length - 1 ? steps[currentIndex + 1] : null;
+}
+
+<section class="concept-guide-nav card border-0 shadow-sm mb-4">
+    <div class="card-body">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <div>
+                <h2 class="h5 mb-1">Concept learning path</h2>
+                <p class="text-muted mb-0">Follow the steps in order to understand how the concepts connect.</p>
+            </div>
+            <span class="badge text-bg-primary">Step @(currentIndex + 1) of @steps.Length</span>
+        </div>
+
+        <div class="row g-2 mt-2">
+            @foreach (var step in steps.Select((value, index) => new { value, index }))
+            {
+                var isActive = string.Equals(step.value.Action, currentAction, StringComparison.OrdinalIgnoreCase);
+                <div class="col-12 col-md-6 col-lg">
+                    <a asp-controller="Concepts"
+                       asp-action="@step.value.Action"
+                       class="concept-step-link d-block text-decoration-none p-2 rounded @(isActive ? "active-step" : "border")">
+                        <small class="text-uppercase fw-semibold text-muted">Step @(step.index + 1)</small>
+                        <div class="fw-semibold text-dark">@step.value.Label</div>
+                        <small class="text-muted">@step.value.Description</small>
+                    </a>
+                </div>
+            }
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between gap-2 mt-3">
+            @if (previous is not null)
+            {
+                <a asp-controller="Concepts" asp-action="@previous.Action" class="btn btn-outline-secondary">
+                    ← @previous.Label
+                </a>
+            }
+            else
+            {
+                <span></span>
+            }
+
+            @if (next is not null)
+            {
+                <a asp-controller="Concepts" asp-action="@next.Action" class="btn btn-primary">
+                    @next.Label →
+                </a>
+            }
+        </div>
+    </div>
+</section>

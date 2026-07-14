@@ -1,0 +1,92 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AspNetCoreViewsDemo.Web
+build_property.RootNamespace = AspNetCoreViewsDemo.Web
+build_property.ProjectDir = /Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Concepts/Documentation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29uY2VwdHMvRG9jdW1lbnRhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Concepts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29uY2VwdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Concepts/Partials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29uY2VwdHMvUGFydGlhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Concepts/TagHelpers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29uY2VwdHMvVGFnSGVscGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Concepts/ViewComponents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29uY2VwdHMvVmlld0NvbXBvbmVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/Components/RecentArticles/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvUmVjZW50QXJ0aWNsZXMvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/Components/StatusPanel/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvU3RhdHVzUGFuZWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/_AlertBanner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BbGVydEJhbm5lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/_ConceptGuideNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Db25jZXB0R3VpZGVOYXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/_FeatureCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19GZWF0dXJlQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rkemish/repos/aspnetcore-views/AspNetCoreViewsDemo.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gllm6ghi06

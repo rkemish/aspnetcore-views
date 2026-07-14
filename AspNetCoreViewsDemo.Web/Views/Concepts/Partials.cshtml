@@ -1,0 +1,28 @@
+@model PartialsDemoViewModel
+
+@{
+    ViewData["Title"] = "Partial Views";
+}
+
+<h1 class="display-6 mb-3">Partial Views Demo</h1>
+
+<partial name="_ConceptGuideNav" />
+
+@await Html.PartialAsync("_AlertBanner", Model.Alert)
+
+<div class="row g-3 mt-1">
+    @foreach (var card in Model.FeatureCards)
+    {
+        <div class="col-md-4">
+            @await Html.PartialAsync("_FeatureCard", card)
+        </div>
+    }
+</div>
+
+<section class="mt-4">
+    <h2 class="h4">Why partial views?</h2>
+    <p>
+        Use partial views for repeated markup that is purely presentational. The parent view keeps orchestration logic,
+        while partials keep rendering snippets consistent and reusable.
+    </p>
+</section>

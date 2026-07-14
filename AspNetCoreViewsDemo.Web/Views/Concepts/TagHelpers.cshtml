@@ -1,0 +1,65 @@
+@model ContactFormInputModel
+
+@{
+    ViewData["Title"] = "Tag Helpers";
+}
+
+<h1 class="display-6 mb-3">Tag Helpers Demo</h1>
+
+<partial name="_ConceptGuideNav" />
+
+<concept-callout title="Tag Helpers are the default authoring style here" tone="success">
+    <p class="mb-0">
+        Links and forms in this sample use Tag Helper attributes like <code>asp-controller</code>,
+        <code>asp-action</code>, <code>asp-for</code>, and <code>asp-items</code>.
+    </p>
+</concept-callout>
+
+@if (TempData["SubmissionMessage"] is string message)
+{
+    <div class="alert alert-success mt-3" role="alert">@message</div>
+}
+
+<form asp-action="TagHelpers" method="post" class="row g-3 mt-1">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="col-md-6">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="Topic" class="form-label"></label>
+        <select asp-for="Topic" asp-items="ViewBag.Topics" class="form-select">
+            <option value="">Select one</option>
+        </select>
+        <span asp-validation-for="Topic" class="text-danger"></span>
+    </div>
+
+    <div class="col-12">
+        <label asp-for="Message" class="form-label"></label>
+        <textarea asp-for="Message" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+
+    <div class="col-12 form-check">
+        <input asp-for="SubscribeToUpdates" class="form-check-input" />
+        <label asp-for="SubscribeToUpdates" class="form-check-label"></label>
+    </div>
+
+    <div class="col-12 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Back to concepts</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
